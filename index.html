@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Mesopotamia 6th Grade Social Studies - Free Ancient Civilizations PDF Curriculum</title>
+  <meta name="description" content="Free 6th grade Ancient Mesopotamia and Ancient Civilizations curriculum PDF. Complete social studies coursebook for sixth grade students learning about ancient civilizations.">
+  <meta name="keywords" content="ancient mesopotamia, sixth grade, 6th grade, social studies, ancient civilizations, free pdf, curriculum, education, history">
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Ancient Mesopotamia 6th Grade Social Studies Curriculum">
+  <meta property="og:description" content="Free comprehensive Ancient Civilizations curriculum PDF for 6th grade social studies.">
+  <meta property="og:type" content="website">
+  
+  <!-- Schema.org markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalResource",
+      "name": "Ancient Mesopotamia 6th Grade Social Studies Curriculum",
+      "description": "Free comprehensive Ancient Civilizations curriculum PDF for 6th grade social studies",
+      "educationalLevel": "6th Grade",
+      "learningResourceType": "Curriculum",
+      "teaches": ["Ancient Mesopotamia", "Ancient Civilizations", "Social Studies"]
+    }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div class="toolbar-section">
+      <button id="prev" title="Previous Page"><i class="fas fa-chevron-left"></i></button>
+      <span id="pageInfo">Page: <span id="pageNum">1</span> / <span id="pageCount">1</span></span>
+      <button id="next" title="Next Page"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    
+    <div class="toolbar-section">
+      <button id="zoomOut" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+      <select id="zoom">
+        <option value="0.5">50%</option>
+        <option value="0.75">75%</option>
+        <option value="1" selected>100%</option>
+        <option value="1.25">125%</option>
+        <option value="1.5">150%</option>
+        <option value="2">200%</option>
+        <option value="3">300%</option>
+      </select>
+      <button id="zoomIn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+    </div>
+    
+    <div class="toolbar-section">
+      <button id="rotateCCW" title="Rotate Counter-clockwise"><i class="fas fa-undo"></i></button>
+      <button id="rotateCW" title="Rotate Clockwise"><i class="fas fa-redo"></i></button>
+      <button id="fullscreen" title="Toggle Fullscreen"><i class="fas fa-expand"></i></button>
+    </div>
+
+    <div class="toolbar-section">
+      <button id="download" title="Download PDF"><i class="fas fa-download"></i></button>
+      <button id="print" title="Print PDF"><i class="fas fa-print"></i></button>
+      <button id="darkMode" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="sidebar">
+      <div class="outline-container">
+        <h3>Table of Contents</h3>
+        <div id="outline"></div>
+      </div>
+      <div class="thumbnail-container">
+        <h3>Page Thumbnails</h3>
+        <div id="thumbnails"></div>
+      </div>
+    </div>
+    
+    <div class="viewer-container">
+      <canvas id="pdfCanvas"></canvas>
+    </div>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search in document...">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="spinner"></div>
+    <div>Loading PDF...</div>
+  </div>
+
+  <script src="viewer.js"></script>
+</body>
+</html>
